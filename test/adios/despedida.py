@@ -6,8 +6,8 @@ def despedida():
 class Despedida():
     def __init__(self, nombre):
         self.nombre = nombre
-        
-    def despedida():
+
+    def despedida(self):
         print('Adios, ' + self.nombre)
         print('Hasta luego'+ self.nombre)
         print('Hasta nunca'+ self.nombre)
