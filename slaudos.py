@@ -1,4 +1,12 @@
-def saludar():
-    print('Holi, saludo')
+class saludos:
+    def __init__(self, nombre):
+        self.nombre = nombre
+    
+    def saludar(self):
+        print('Hola, soy: ' + self.nombre)
 
-print(saludar)
+
+
+#def saludar():
+#print('Holi, saludo')
+
