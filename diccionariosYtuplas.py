@@ -1,5 +1,6 @@
 from collections import defaultdict
 from collections import OrderedDict
+from collections import namedtuple
 
 d = defaultdict(float)  
 print(d['algo'])
@@ -24,3 +25,17 @@ n1['dos'] = 'two'
 n2 = {}
 n2['dos'] = 'two'
 n2['uno'] = 'one'
+
+print(n1 == n2)
+
+Persona = namedtuple('Persona','nombre apellido edad')
+p = Persona(nombre="Hector",apellido="Costa",edad=27)
+
+print(p)
+
+print(p.nombre)
+print(p.edad)
+
+print(p[0])
+print(p[-1])
+Persona(nombre='Hector', apellido='Costa', edad=27)
